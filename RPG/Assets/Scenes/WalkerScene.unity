@@ -396,6 +396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkerMilan
       objectReference: {fileID: 0}
+    - target: {fileID: 7583022780077036799, guid: ae9edcae65ec82840874ce2cb1e21bc9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4154626181522259262, guid: b1e527a3c790ef54f9d6704ddd99c2ae, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae9edcae65ec82840874ce2cb1e21bc9, type: 3}
 --- !u!1001 &7583022779449370490
@@ -453,5 +457,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: WalkerDelta
       objectReference: {fileID: 0}
+    - target: {fileID: 7583022780077036799, guid: ae9edcae65ec82840874ce2cb1e21bc9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4154626181522259262, guid: 1271fd999662ca049a65ad41d0eeb7bc, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae9edcae65ec82840874ce2cb1e21bc9, type: 3}
