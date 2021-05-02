@@ -19,6 +19,8 @@ public class Walker : MonoBehaviour
     private Sprite upB;
     private float oldTime;
     private AnimationState animationState;
+    public float inputVertical;
+    public float inputHorizontal;
 
     private enum AnimationState
     {
@@ -65,8 +67,8 @@ public class Walker : MonoBehaviour
     void Update()
     {
         var newTime = Time.time;
-        var v = Input.GetAxis("Vertical");
-        var h = Input.GetAxis("Horizontal");
+        var v = inputVertical;
+        var h = inputHorizontal;
         GetComponent<Rigidbody2D>().velocity = new Vector2(h, v) * 4.0f;
 
         if(v < 0.0 && animationState != AnimationState.DownWalk){
