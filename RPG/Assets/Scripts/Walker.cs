@@ -71,23 +71,6 @@ public class Walker : MonoBehaviour
         var h = inputHorizontal;
         GetComponent<Rigidbody2D>().velocity = new Vector2(h, v) * 4.0f;
 
-        if(v < 0.0 && animationState != AnimationState.DownWalk){
-            animationState = AnimationState.DownWalk;
-            UpdateSprite();
-        }
-        else if(h < 0.0 && v == 0 && animationState != AnimationState.LeftWalk){
-            animationState = AnimationState.LeftWalk;
-            UpdateSprite();
-        }
-        else if(h > 0.0 && v == 0 && animationState != AnimationState.RightWalk){
-            animationState = AnimationState.RightWalk;
-            UpdateSprite();
-        }
-        else if(v > 0.0 && animationState != AnimationState.UpWalk){
-            animationState = AnimationState.UpWalk;
-            UpdateSprite();
-        }
-        
         if(h == 0 && v == 0)
         {
             if(animationState == AnimationState.DownWalk){
@@ -103,6 +86,40 @@ public class Walker : MonoBehaviour
                 animationState = AnimationState.UpStop;
             }
         }
+        else if(Mathf.Abs(v) > Mathf.Abs(h))
+        {
+            if(v < 0.0){
+                animationState = AnimationState.DownWalk;
+            }
+            else{
+                animationState = AnimationState.UpWalk;
+            }
+        }
+        else{
+            if(h < 0.0){
+                animationState = AnimationState.LeftWalk;
+            }
+            else{
+                animationState = AnimationState.RightWalk;
+            }
+        }
+
+        // if(v < 0.0 && animationState != AnimationState.DownWalk){
+        //     animationState = AnimationState.DownWalk;
+        //     UpdateSprite();
+        // }
+        // else if(h < 0.0 && Mathf.Abs(h) > Mathf.Abs(v) && animationState != AnimationState.LeftWalk){
+        //     animationState = AnimationState.LeftWalk;
+        //     UpdateSprite();
+        // }
+        // else if(h > 0.0 && Mathf.Abs(h) > Mathf.Abs(v) && animationState != AnimationState.RightWalk){
+        //     animationState = AnimationState.RightWalk;
+        //     UpdateSprite();
+        // }
+        // else if(v > 0.0 && animationState != AnimationState.UpWalk){
+        //     animationState = AnimationState.UpWalk;
+        //     UpdateSprite();
+        // }
 
         if (newTime - oldTime >= 0.5)
         {
