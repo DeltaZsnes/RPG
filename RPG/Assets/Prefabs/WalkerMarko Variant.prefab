@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1300925170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5036921950135985568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db8dfd810667d7d4e982f491927a9d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+--- !u!1001 &3291890237927108541
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7514706130568841756, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4154626181522259262, guid: f1849d15db617b4438a3909bf134dacc, type: 3}
+    - target: {fileID: 7514706130568841757, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_Name
+      value: WalkerMarko
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841758, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: walkingTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: f1849d15db617b4438a3909bf134dacc, type: 3}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514706130568841759, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+--- !u!1 &5036921950135985568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7514706130568841757, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
+  m_PrefabInstance: {fileID: 3291890237927108541}
+  m_PrefabAsset: {fileID: 0}
