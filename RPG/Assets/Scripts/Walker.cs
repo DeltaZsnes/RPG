@@ -35,7 +35,6 @@ public class Walker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(walkingTexture.width + ":" + walkingTexture.height);
         var w = walkingTexture.width;
         var h = walkingTexture.height;
         var s = 48;
