@@ -543,7 +543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &826937134
@@ -566,27 +566,65 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare
-    laoreet ultrices. Donec feugiat est mi, eu tincidunt dolor pulvinar non. Sed
-    ac ligula vel eros dictum mollis nec commodo lectus. Vivamus porttitor lacinia
-    semper. Nullam luctus, massa eget mattis commodo, erat ipsum commodo mi, eget
-    facilisis urna neque sed nisl. Duis efficitur maximus nisi, vitae scelerisque
-    dolor congue in. Vestibulum tincidunt cursus arcu. Praesent semper sem vitae
-    mauris prhjghjvhjhhjgjhghjgjhgjhghjgj hghjgh hjgjhgjh hjghj ghjg hjg hj gj hjg
-    jhg hjg hjg hjghjghjjjjjjjjjjjjjjjgh ghjgjhgjh, eu tincidunt dolor pulvinar non.
-    Sed ac ligula vel eros dictum mollis nec hjg hjghjg jhcommodo lectus. Vivamus
-    porttitor lacinia semper. Nullam luctus, massa eget mattis commodo, erat ipsum
-    commodo mi, eget facilisis urna neque sed nisl. Duis efficitur maximus nisi,
-    vitae scelerisque dolor congue in. Vestibulum tincidunt cursus arcu. Praesent
-    semper sem vitae mauris pretium, eget lobortis nibh blandit. Ut a risus luctus
-    enim mollis hendrerit. Maecenas sit amet elit lacus.
+  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lorem
+    ullamcorper, semper enim non, tempus ligula. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia curae; Phasellus sit amet commodo
+    augue, fringilla consequat mauris. Etiam eget mollis ligula, sed maximus tellus.
+    Pellentesque sed magna libero. Vivamus iaculis odio eros, nec lacinia ex porta
+    at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices
+    lorem a commodo dictum. Donec interdum ante at finibus interdum. Duis elit nibh,
+    posuere sed bibendum et, blandit quis nunc. Phasellus congue porta fermentum.
+    Nam semper rutrum sapien, eu porta eros lacinia nec. Pellentesque suscipit, tortor
+    nec porttitor aliquam, orci ipsum consectetur nulla, sit amet fermentum ipsum
+    ex et dolor. Quisque a nisl sed ipsum efficitur tempus id in dui. Duis varius
+    nisl in magna mattis, ac iaculis eros pellentesque.
 
     
 
+    Nam nec ornare
+    velit. In nulla nisl, accumsan ac volutpat in, scelerisque vitae sapien. Nulla
+    ut dignissim mi. Suspendisse eu erat sed quam feugiat consectetur. Vestibulum
+    nec magna in metus lobortis ultrices. Cras in lorem malesuada, tincidunt nisl
+    ac, tincidunt ipsum. Vestibulum sollicitudin fringilla ipsum, eu commodo augue
+    suscipit eu. Maecenas tristique pellentesque risus, sed dignissim justo hendrerit
+    eu.
 
     
 
-'
+    Nunc ultricies dolor et dolor dignissim vulputate. Integer mollis
+    eros tortor, quis varius ex aliquam sit amet. Integer dui sapien, pretium quis
+    velit placerat, blandit maximus nunc. Pellentesque aliquet vel mauris non bibendum.
+    Suspendisse tortor augue, dapibus id enim molestie, tristique pulvinar turpis.
+    Praesent non magna quis massa viverra consectetur quis nec ante. Integer maximus
+    tortor ipsum, ut porta ligula porta quis. Vivamus at dictum lacus. Curabitur
+    fringilla, arcu facilisis placerat auctor, orci eros tempus tortor, vitae hendrerit
+    lorem dui id quam. Vivamus eget turpis vitae diam molestie mollis. Cras id risus
+    vitae nisi imperdiet ornare suscipit vel est. Nullam ut orci at orci sodales
+    posuere. Aliquam sapien nisl, pretium eu elementum et, malesuada vel nunc. Nunc
+    rhoncus mollis est et semper.
+
+    
+
+    Nulla nibh felis, vestibulum vel velit
+    nec, blandit efficitur risus. Sed sed scelerisque velit. Cras consectetur eget
+    magna eget lacinia. Sed consectetur nulla felis, id sagittis metus efficitur
+    eget. Duis eget augue ac risus dictum venenatis quis a nibh. Pellentesque rutrum
+    iaculis orci eu pretium. Quisque facilisis at ipsum tristique blandit. Sed et
+    neque ut sem consectetur ultrices. Aliquam erat volutpat. Phasellus tristique
+    pharetra nisl, quis maximus magna congue id. Nunc tincidunt, tellus sit amet
+    commodo ornare, elit massa iaculis mauris, ut congue mauris erat at odio. Morbi
+    iaculis in nisi sed vehicula. Mauris posuere elementum ultrices. Vestibulum tortor
+    lacus, pulvinar ut elit sit amet, pretium vehicula ipsum. Nulla quis consequat
+    eros, vitae pulvinar nulla. Mauris varius lacinia velit eget euismod.
+
+    
+
+    Sed
+    ultrices mi a placerat lobortis. Etiam dignissim tellus lectus, eu auctor sapien
+    euismod in. In porta quam et neque viverra, a elementum risus pharetra. Duis
+    eleifend volutpat velit, id convallis urna scelerisque semper. Ut imperdiet gravida
+    neque non elementum. Nam ullamcorper ultricies magna vel fermentum. Fusce eu
+    viverra nunc. Duis rutrum diam non turpis hendrerit pharetra. Nulla facilisi.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -620,7 +658,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -649,7 +687,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 22.365967, y: 19.880928, z: 20.904022, w: 19.880898}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

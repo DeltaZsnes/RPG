@@ -25,6 +25,7 @@ class BattleCard
 
 public class BattleGame : MonoBehaviour
 {
+    public static BattleGame current;
     public GameObject battleText;
     private float oldTime;
     private Stack<BattleCard> cardStack;
@@ -32,6 +33,7 @@ public class BattleGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        current = this;
         cardStack = new Stack<BattleCard>();
     }
 
