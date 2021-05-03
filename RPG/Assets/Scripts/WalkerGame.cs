@@ -12,42 +12,61 @@ public class WalkerGame : MonoBehaviour
     public GameObject tweetName;
     public GameObject tweetText;
 
-    public event Action tweetDone;
+    private Queue<TweetItem> tweetQueue;
 
-    // private Queue<(Sprite, string, string, Action)> tweetQueue = new Queue<(Sprite, string, string, Action)>();
-
-    // Start is called before the first frame update
-    void Start()
+    public WalkerGame()
     {
         current = this;
+        tweetQueue = new Queue<TweetItem>();
     }
 
-    // Update is called once per frame
-    void Update()
+    class TweetItem
     {
+        public Sprite image;
+        public string name;
+        public string text;
+        public Action callback;
     }
 
-    // public void QueueTweet(Sprite image, string name, string text, Action action)
-    // {
-    //     tweetQueue.Enqueue((image, name, text, action));
-    // }
-
-    public void Tweet(Sprite image, string name, string text)
+    public void QueueTweet(Sprite image, string name, string text, Action callback)
     {
+        tweetQueue.Enqueue(new TweetItem(){
+            image = image,
+            name = name,
+            text = text,
+            callback = callback,
+        });
+
+        if(tweetQueue.Count == 1)
+        {
+            NextTweet();
+            return;
+        }
+    }
+
+    void NextTweet()
+    {
+        if(tweetQueue.Count == 0)
+        {
+            return;
+        }
+
+        var item = tweetQueue.Peek();
+
         var ti = tweetImage.GetComponent<SpriteRenderer>();
-        ti.sprite = image;
+        ti.sprite = item.image;
 
         var tn = tweetName.GetComponent<TMP_Text>();
-        tn.text = name;
+        tn.text = item.name;
 
         var tt = tweetText.GetComponent<TMP_Text>();
-        tt.text = text;
+        tt.text = item.text;
         tt.pageToDisplay = 1;
 
         tweet.SetActive(true);
     }
 
-    public void TweetPressed()
+    public void TweetContinue()
     {
         var tt = tweetText.GetComponent<TMP_Text>();
         tt.pageToDisplay = tt.pageToDisplay + 1;
@@ -56,10 +75,17 @@ public class WalkerGame : MonoBehaviour
         {
             tweet.SetActive(false);
 
-            if(tweetDone != null)
+            if(tweetQueue.Count != 0)
             {
-                tweetDone();
+                var item = tweetQueue.Dequeue();
+                
+                if(item.callback != null)
+                {
+                    item.callback();
+                }
             }
+            
+            NextTweet();
         }
     }
 }

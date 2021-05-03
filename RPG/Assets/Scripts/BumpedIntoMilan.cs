@@ -20,15 +20,13 @@ public class BumpedIntoMilan : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D _)
     {
-        WalkerGame.current.Tweet(portrait, "?", "Hey!!! Want some drugs?");
-        WalkerGame.current.Tweet(portrait, "Milan", "Im Milan!");
-        WalkerGame.current.Tweet(portrait, "Milan", "Hey!!! Talk to me");
-        WalkerGame.current.tweetDone += ttt;
+        WalkerGame.current.QueueTweet(portrait, "?", "Hey!!! Want some drugs?", null);
+        WalkerGame.current.QueueTweet(portrait, "Milan", "Im Milan!", null);
+        WalkerGame.current.QueueTweet(portrait, "Milan", "Hey!!! Talk to me", ttt);
     }
 
     void ttt()
     {
         Debug.Log("Conversation Ended");
-        WalkerGame.current.tweetDone -= ttt;
     }
 }

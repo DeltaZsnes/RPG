@@ -473,20 +473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Unity is a cross-platform game engine developed by Unity Technologies,
-    first announced and released in June 2005 at Apple Inc.'s Worldwide Developers
-    Conference as a Mac OS X-exclusive game engine. The engine has since been gradually
-    extended to support a variety of desktop, mobile, console and virtual reality
-    platforms. It is particularly popular for iOS and Android mobile game development
-    and used for games such as Pok\xE9mon Go, Monument Valley, Call of Duty: Mobile,
-    Beat Saber and Cuphead.[4] It is cited to be easy to use for beginner developers
-    and is popular for Indie game development.[5]\r\n\r\nThe engine can be used to
-    create three-dimensional (3D) and two-dimensional (2D) games, as well as interactive
-    simulations and other experiences.[6][7] The engine has been adopted by industries
-    outside video gaming, such as film, automotive, architecture, engineering and
-    construction.\r\n\r\nSeveral major versions of Unity have been released since
-    its launch. The latest stable version, 2021.1.0[1] Edit this on Wikidata, was
-    released on 23 March 2021; 39 days ago."
+  m_text: Yeah! Lets go on an adventure and check out what this world is all about
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -628,7 +615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1193351742
 RectTransform:
   m_ObjectHideFlags: 0
@@ -697,7 +684,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1015862613}
         m_TargetAssemblyTypeName: WalkerGame, Assembly-CSharp
-        m_MethodName: TweetPressed
+        m_MethodName: TweetContinue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -868,6 +855,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7514706130568841757, guid: 38aca2910469ea14ba0c831aef35ed9c, type: 3}
   m_PrefabInstance: {fileID: 7514706131355711897}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1499830472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499830471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27b36d6e4e985c4999864154d2979bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portrait: {fileID: -4296760176796813495, guid: 3f3651d637d743d4aaa77376a3973205, type: 3}
 --- !u!114 &1499830477
 MonoBehaviour:
   m_ObjectHideFlags: 0

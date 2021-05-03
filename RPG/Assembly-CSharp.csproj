@@ -44,6 +44,7 @@
      <Compile Include="Assets\Scripts\BattleGame.cs" />
      <Compile Include="Assets\Scripts\BumpedIntoMilan.cs" />
      <Compile Include="Assets\Scripts\WalkerGame.cs" />
+     <Compile Include="Assets\Scripts\StoryBeginDelta.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
