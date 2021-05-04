@@ -5,6 +5,7 @@ using UnityEngine;
 public class BumpedIntoMilan : MonoBehaviour
 {
     public Sprite portrait;
+    private bool isTalking = false;
 
     // Start is called before the first frame update
     void Start()
@@ -20,13 +21,19 @@ public class BumpedIntoMilan : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D _)
     {
-        WalkerGame.current.QueueTweet(portrait, "?", "Hey!!! Want some drugs?", null);
-        WalkerGame.current.QueueTweet(portrait, "Milan", "Im Milan!", null);
-        WalkerGame.current.QueueTweet(portrait, "Milan", "Hey!!! Talk to me", ttt);
+        if(!isTalking)
+        {
+            isTalking = true;
+            WalkerGame.current.QueueTweet(portrait, "?", "Hey!!! Want some drugs?", null);
+            WalkerGame.current.QueueTweet(portrait, "Milan", "Im Milan!", null);
+            WalkerGame.current.QueueTweet(portrait, "Milan", "Hey!!! Talk to me", TalkEnded);
+        }
+        
     }
 
-    void ttt()
+    void TalkEnded()
     {
-        Debug.Log("Conversation Ended");
+        Debug.Log("TalkEnded");
+        isTalking = false;
     }
 }

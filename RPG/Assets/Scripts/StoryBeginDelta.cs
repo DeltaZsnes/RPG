@@ -10,8 +10,6 @@ public class StoryBeginDelta : MonoBehaviour
     void Start()
     {
         var name = "Delta";
-        Debug.Log(portrait);
-        Debug.Log(WalkerGame.current);
         WalkerGame.current.QueueTweet(portrait, name, "Ohayo Sekai!!! Good morning world !!!", null);
         WalkerGame.current.QueueTweet(portrait, name, "Lets go on an adventure and explore what this world has to offer", null);
         WalkerGame.current.QueueTweet(portrait, name, "This town has some new problems to fix", null);
